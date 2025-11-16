@@ -1,0 +1,739 @@
+/* >>>>>>>>>>>>>>> Global section */
+body {
+    margin: 0;
+    background-color: #F1F1F1;
+}
+
+div.clear-flix {
+    clear: both;
+}
+
+div.parent {
+    width: 80%;
+    margin: auto;
+    padding-top: 50px 20px 0;
+}
+
+ul {
+    list-style: none;
+}
+
+.classh2 {
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 40px;
+    font-weight: 800;
+    color: rgb(51, 51, 51);
+    text-align: center;
+    position: relative;
+}
+
+.classh2::before,
+.classh2::after,
+.classh2 span::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #ff305b;
+    height: 1px;
+}
+
+.classh2::before {
+    width: 100px;
+    bottom: -10px;
+    height: 1px;
+}
+
+.classh2::after {
+    width: 200px;
+    bottom: -15px;
+}
+
+.classh2 span {
+    display: block;
+    position: relative;
+}
+
+.classh2 span::after {
+    content: "";
+    width: 100px;
+    bottom: -20px;
+    position: absolute;
+}
+
+
+/* <<<<<<<<<<<<<<<<<<<<<<< close */
+
+/* >>>>>>>>>> section Hero */
+
+nav.header {
+    background-image: url(images/slider-02.jpg);
+    color: #fff;
+    height: 100vh;
+    position: relative;
+    z-index: 1;
+}
+
+nav.header::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 0;
+}
+
+nav.header div.hero {
+    text-align: center;
+    width: 80%;
+    position: relative;
+    margin: auto;
+    z-index: 2;
+}
+
+nav.header p.nav-hero {
+    color: rgb(255, 48, 91);
+    margin-top: 13px;
+    font-family: Roboto, sans-serif;
+    font-size: 24px;
+    font-weight: 800;
+    float: left;
+}
+
+nav.header div.navbar ul {
+    float: right;
+    margin-top: 25px;
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    list-style: none;
+
+}
+
+nav.header div.navbar ul li {
+    float: left;
+    padding-left: 15px;
+}
+
+nav.header div.navbar ul li:hover {
+    font-weight: 100;
+    color: rgb(255, 48, 91);
+}
+
+nav.header div.data {
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+nav.header div.data h3 {
+    color: rgb(255, 255, 255);
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+
+}
+
+nav.header div.data h1 {
+    color: rgb(255, 48, 91);
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 38px;
+    font-weight: 900;
+}
+
+nav.header div.data p {
+    color: rgb(255, 255, 255);
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 2px solid #333;
+    animation: typing 3s steps(25, end), blink-caret 0.5s step-end infinite;
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 100%
+    }
+}
+
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent
+    }
+
+    50% {
+        border-color: #333
+    }
+}
+
+/* <<<<<<<<<<<<<<<<< close */
+
+/* >>>>>>>>>>>>>>>>> section About */
+
+/* >>>>>>>>>>> str col-left */
+div.about {
+    background-color: rgb(255, 255, 255);
+    padding: 60px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+div.about div.parent div.col-img {
+    width: 50%;
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+    float: left;
+    /* display: inline-block; */
+}
+
+div.about div.parent div.border {
+    position: absolute;
+    border: 8px solid #555;
+    border-radius: 5px;
+    z-index: 1;
+    width: 326px;
+    height: 434px;
+    top: 33px;
+    left: 120px;
+}
+
+div.about div.parent div.col-img img {
+    display: block;
+    max-width: 100%;
+}
+
+div.about div.parent div.col-img div.overlay {
+    background-color: rgb(104, 104, 104, 0.9);
+    position: absolute;
+    left: 0;
+    bottom: -100%;
+    width: 59%;
+    height: 100%;
+    transition: bottom 0.5s ease-in-out;
+}
+
+div.about div.parent div.col-img:hover .overlay {
+    bottom: 0;
+}
+
+div.about div.parent div.col-img div.overlay div.social-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: inline-block;
+}
+
+div.about div.parent div.col-img div.overlay div.social-icon i {
+    text-align: center;
+    margin-left: 20px;
+    color: #fff;
+    display: inline-block;
+}
+
+div.about div.parent div.col-img div.overlay div.social-icon i:hover {
+    color: rgb(255, 48, 91);
+}
+
+/* <<<<<<<<<<<<<<<<< close */
+
+/* >>>>>>>>>>> str col-right */
+div.about div.col-text {
+    width: 50%;
+    float: right;
+}
+
+div.about div.col-text div.portfolio-text h2 {
+    font-family: "Source Code Pro";
+    color: rgb(51, 51, 51);
+    font-size: 34px;
+    font-weight: 600;
+}
+
+div.about div.col-text div.portfolio-text h2::before {
+    content: "";
+    display: inline-block;
+    margin-right: 10px;
+    background-color: rgb(255, 48, 91);
+    width: 5px;
+    height: 30px;
+}
+
+div.about div.col-text div.portfolio-text p {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: rgb(85, 85, 85);
+    padding: 0;
+    margin-bottom: 30px;
+}
+
+div.about div.col-text div.portfolio-about ul {
+    list-style: none;
+}
+
+div.about div.col-text div.portfolio-about ul li span {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: rgb(51, 51, 51);
+}
+
+div.about div.col-text div.portfolio-about ul li {
+    width: 50%;
+    float: left;
+    margin-bottom: 15px;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: rgb(85, 85, 85);
+}
+
+div.about div.col-text div.portfolio-butn {
+    width: 55%;
+    /* margin: auto; */
+}
+
+div.about div.col-text div.portfolio-butn div.butn-left {
+    float: left;
+}
+
+div.about div.col-text div.portfolio-butn div.butn-right {
+    float: right;
+}
+
+div.about div.col-text div.portfolio-butn button {
+    background-color: rgb(255, 48, 91);
+    color: #fff;
+    margin-top: 30px;
+    padding: 10px 35px;
+    border: none;
+    border-radius: 5px;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+}
+
+div.about div.col-text div.portfolio-butn button i {
+    padding-left: 15px;
+}
+
+div.about div.col-text div.portfolio-butn button:hover {
+    background-color: rgb(255, 69, 0);
+    transform: translateY(-2px);
+}
+
+/* <<<<<<<<<<<<<<<<< close */
+
+/* >>> section Our Services */
+
+div.our-services {
+    padding: 50px 0;
+}
+
+div.our-services div.parent div.service {
+    width: 25%;
+    padding: 50px 0;
+    text-align: center;
+    float: left;
+}
+
+div.our-services div.parent div.service:hover {
+    background-color: #fff;
+}
+
+div.our-services div.parent div.service i {
+    color: rgb(255, 69, 0);
+    font-size: 30px;
+}
+
+div.our-services div.parent div.service h3 {
+    color: rgb(51, 51, 51);
+    font-family: "Roboto", sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+div.our-services div.parent div.service p {
+    width: 90%;
+    color: rgb(85, 85, 85);
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+/* <<<<<<<<<<<<<<<<< close */
+
+/* >> section Our Portfolio */
+div.our-portfolio {
+    background-color: #fff;
+    padding: 50px 0;
+}
+
+div.our-portfolio div.parent div.title {
+    width: 40%;
+    margin: auto;
+    text-align: center;
+}
+
+div.our-portfolio div.parent div.title ul {
+    padding: 0;
+    list-style: none;
+    display: inline-block;
+}
+
+div.our-portfolio div.parent div.title ul li {
+    display: inline-block;
+    margin: 0 15px;
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: rgb(51, 51, 51);
+    cursor: pointer;
+}
+
+div.our-portfolio div.parent div.title ul li.selected {
+    color: rgba(255, 48, 91, 1);
+}
+
+div.our-portfolio div.parent div.product {
+    width: 100%;
+    padding: 50px 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div.our-portfolio div.parent div.product div.image {
+    position: relative;
+    width: 31%;
+    overflow: hidden;
+    margin: 10px;
+}
+
+div.our-portfolio div.parent div.product div.image img {
+    width: 100%;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+div.image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(126, 124, 122, 0);
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div.our-portfolio div.parent div.product div.image:hover div.image-overlay {
+    background-color: rgba(126, 124, 122, 0.8);
+}
+
+div.image-overlay i {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    color: rgba(255, 255, 255, 0);
+    font-size: 24px;
+    transition: all 0.3s ease;
+    color: transparent;
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+
+}
+
+div.our-portfolio div.parent div.product div.image:hover div.image-overlay i {
+    color: rgba(255, 48, 91, 1);
+}
+
+/* <<<<<<<<<<<<<<<<< close */
+
+/* >>>>>>>>>>> Total Stats */
+div.total-stats div.parent div.team-member {
+    width: 25%;
+    margin: 50px 0;
+    text-align: center;
+    float: left;
+}
+
+div.total-stats div.parent div.team-member i {
+    color: rgba(255, 48, 91, 1);
+    font-size: 30px;
+}
+
+div.total-stats div.parent div.team-member h3 {
+    font-family: "Source Code Pro";
+    font-size: 26px;
+    font-weight: 800;
+    color: rgb(51, 51, 51);
+}
+
+div.total-stats div.parent div.team-member h5 {
+    font-family: "Source Code Pro";
+    font-size: 16px;
+    font-weight: 800;
+    color: rgb(85, 85, 85);
+}
+
+/* <<<<<<<<<<<<<<<<< close */
+
+/* >>>>>>>>>>>>>>> Feedback */
+div.feedback {
+    background-color: #fff;
+    padding: 50px 0;
+}
+
+div.feedback div.parent div.container {
+    padding: 50px 0;
+    position: relative;
+    width: 60%;
+    margin: auto;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #F1F1F1;
+    overflow: hidden;
+}
+
+div.feedback div.parent div.container .shape {
+    width: 250px;
+    height: 250px;
+    background-color: #FF305B;
+    position: absolute;
+    top: -130px;
+    left: -130px;
+    rotate: 45deg;
+}
+
+div.feedback div.parent div.container img {
+    width: 120px;
+    position: absolute;
+    top: 40px;
+    left: 30px;
+    border-radius: 50%;
+
+}
+
+div.feedback div.parent div.container .data {
+    /* float: right; */
+    position: relative;
+    left: 25%;
+}
+
+div.feedback h3 {
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 26px;
+    font-weight: 600;
+    color: rgb(51, 51, 51);
+}
+
+div.feedback h4 {
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    color: rgb(119, 119, 119);
+
+}
+
+div.feedback p {
+    font-family: Roboto, sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    font-style: italic;
+    color: rgb(85, 85, 85);
+    width: 50%;
+}
+
+div.star i {
+    color: #F1C30D;
+}
+
+div.feedback div.parent .scroal {
+    width: 25px;
+    height: 8px;
+    position: relative;
+    left: 50%;
+    margin: 25px 0 0;
+    border-radius: 10px;
+    background-color: #EE250C;
+}
+
+div.feedback div.parent .scroal span {
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    left: 135%;
+    border: 1px solid #EE250C;
+    border-radius: 50%;
+}
+
+/* <<<<<<<<<<<<<<<<< close */
+
+
+/* >>>>>>>>>>>>>>> Our Blog */
+div.our-blog {
+    padding: 50px 0;
+    /* aspect-ratio: 16 / 9; */
+}
+
+
+div.our-blog div.parent div.cards div.card {
+    padding-left: 15px;
+    width: 32%;
+    float: left;
+}
+
+div.our-blog div.parent div.cards div.card img {
+    width: 100%;
+    display: block;
+}
+
+div.our-blog div.parent div.cards div.card .text {
+    background-color: #fff;
+    padding: 10px;
+}
+
+div.our-blog div.parent div.cards div.card p {
+    width: 80%;
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: rgb(85, 85, 85);
+}
+
+div.our-blog div.parent div.cards div.card h3 {
+    font-family: "Source Code Pro";
+    font-size: 24px;
+    font-weight: 600;
+    color: rgb(51, 51, 51);
+}
+
+div.our-blog div.parent div.cards div.card h3:hover {
+    color: rgba(255, 48, 91, 1);
+}
+
+div.our-blog div.parent div.cards div.card h4 {
+    font-family: "Times New Roman";
+    font-size: 16px;
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+}
+
+div.our-blog div.parent div.cards div.card h4:hover {
+    color: rgba(255, 48, 91, 1);
+}
+
+div.our-blog div.parent div.cards div.card h4 i {
+    font-size: small;
+    width: 30px;
+}
+
+/* <<<<<<<<<<<<<<<<< close */
+
+
+/* >>>>>>>>>>>>> Contact Us */
+form {
+    width: 70%;
+    margin: auto;
+}
+
+div.contact-us {
+    background-color: #fff;
+    padding: 50px 0;
+}
+
+div.contact-us input {
+    padding: 15px 0;
+    margin: 20px 0;
+    border-radius: 5px;
+}
+
+div.contact-us div.row1 input {
+    width: 45%;
+    padding-left: 15px;
+    margin-right: 15px;
+    float: left;
+}
+
+div.contact-us div.row input,
+div.contact-us div.row textarea {
+    width: 94%;
+    padding-left: 15px;
+    margin-right: 15px;
+    float: left;
+}
+
+form button {
+    background-color: #FF305B;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 25px;
+}
+
+form button:hover {
+    background-color: #EE250C;
+}
+
+/* <<<<<<<<<<<<<<<<< close */
+
+/* <<<<<<<<< Sction Footer */
+footer {
+    background-color: rgb(51, 51, 51);
+    color: #fff;
+    text-align: center;
+    padding: 50px 0;
+}
+
+footer div.icons {
+    text-align: center;
+}
+
+footer div.icons ul {
+    display: inline-block;
+}
+
+footer div.icons ul li {
+    display: inline-block;
+    padding: 0 15px;
+}
+
+footer div.icons ul li:hover {
+    color: rgba(255, 48, 91, 1);
+}
+
+footer div.copy-right {
+    font-family: "Roboto";
+    font-size: 16px;
+    font-weight: 400;
+}
+
+footer div.copy-right span {
+    color: rgba(255, 48, 91, 1);
+
+}
+
+/* <<<<<<<<<<<<<<<<< close */
